@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" total="1" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="69787" started-at="2014-08-17T11:27:21Z" finished-at="2014-08-17T11:28:31Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="69787" started-at="2014-08-17T11:27:21Z" finished-at="2014-08-17T11:28:31Z">
+      <class name="com.test.trailers.trailers_test">
+        <test-method status="PASS" signature="share(java.lang.String, java.lang.String)[pri:0, instance:com.test.trailers.trailers_test@1fdd342]" name="share" duration-ms="69769" started-at="2014-08-17T16:57:21Z" data-provider="register_data" finished-at="2014-08-17T16:58:31Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[facebook]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- share -->
+      </class> <!-- com.test.trailers.trailers_test -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>

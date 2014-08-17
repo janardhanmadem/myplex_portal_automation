@@ -1,0 +1,28 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite allow-return-values="true" name="Myplex Login Suite">
+
+<test name="Myplex Login Flow Test Case">
+    <classes>
+        <class name="com.testcases.myplex_login_flow_testcase" ></class>  
+    </classes>
+</test>
+<test name="Facebook login Test Case">
+    <classes>
+        <class name="com.testcases.facebook_login_testcases" ></class>  
+    </classes>
+</test>
+<test name="Google login Test Case">
+    <classes>
+        <class name="com.testcases.google_login_testcases" ></class>  
+    </classes>
+</test>
+<test name="myplex signup Test Case">
+    <classes>
+        <class name="com.testcases.myplex_signup_testcase" ></class>  
+    </classes>
+</test>
+
+
+
+</suite>
