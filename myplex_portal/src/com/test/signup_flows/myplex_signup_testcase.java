@@ -32,43 +32,26 @@ public class myplex_signup_testcase {
 		
 		try{
 		Properties prop=new Properties();
-		FileInputStream fp=new FileInputStream("G:\\workspace\\myplex_portal\\src\\com\\properties\\or.properties");
+		FileInputStream fp=new FileInputStream("C:\\users\\Janardhan\\git\\portal_automation\\myplex_portal\\src\\com\\properties\\or.properties");
 		prop.load(fp);
 		key=new keywords();
 		key.browser(browser_name);
-		/*if(prop.getProperty("browser").equalsIgnoreCase("firefox")){
-			driver=new FirefoxDriver();
-		}else if(prop.getProperty("browser").equalsIgnoreCase("chrome")){
-			System.setProperty("webdriver.chrome.driver", "G:\\workspace\\myplex_portal\\src\\chromedriver.exe");
-			driver=new ChromeDriver();
-		}else{
-			System.out.println("you entered wrong browser name");
-		}*/
 		System.out.println("Testing in Browser :"+browser_name);
 		key.implicit_wait(20);
 		key.window_maxmise();
 		key.open_browser("http:\\www.myplex.com");
-		//driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
-		//driver.manage().window().maximize();
-		//driver.get("http:\\www.myplex.com");
 		System.out.println("Browser is open");
-		//System.out.println(driver.getTitle());
-		//if(driver.getTitle().equals("Watch Movies Online, Watch TV Shows Seasons Online | Myplex.com"))
 			if(key.get_window_title().equals("Watch Movies Online, Watch TV Shows Seasons Online | Myplex.com"))
 		{
 		//Sign Up  Test
 		key.click_xpath("signup_xpath");
-		key.click_xpath("signup_xpath");
-		//driver.findElement(By.xpath(prop.getProperty("signup_xpath"))).click();
-		//driver.findElement(By.xpath(prop.getProperty("signup_xpath"))).click();
+		
 		if(username!=null){
-		//driver.findElement(By.xpath(prop.getProperty("signup_username_xpath"))).sendKeys(username);
 		key.send_text("signup_username_xpath", username);
 		}else{
 			System.out.println("user name is not there");
 		}
 		if(password!=null){
-		//driver.findElement(By.xpath(prop.getProperty("signup_password_xpath"))).sendKeys(password);
 		key.send_text("signup_password_xpath", password);
 		}else{
 			System.out.println("password is not there");
@@ -80,21 +63,17 @@ public class myplex_signup_testcase {
 			System.out.println("cellnumber is not there");
 		}
 		key.click_xpath("signup_submit_xpath");
-		//driver.findElement(By.xpath(prop.getProperty("signup_submit_xpath"))).click();
+		
 		if(datavalidation.equals("valid_data_new_data")){
 			System.out.println("Testing with Valid Data");
 			key.sleep(4000L);
-			//Thread.sleep(4000L);
-		//String profile=driver.findElement(By.xpath(prop.getProperty("profile_xpath"))).getText();
 		String profile=key.get_text_xpath("profile_xpath");
 		if(profile.equalsIgnoreCase("profile")){
 			System.out.println("Login is success");
 			key.click_xpath("profile_xpath");
-			//driver.findElement(By.xpath(prop.getProperty("profile_xpath"))).click();
 			System.out.println("user name is :"+username);
 			System.out.println("Password is :"+password);
 			System.out.println("cell number is :"+cellnumber);
-			//String email=driver.findElement(By.xpath(prop.getProperty("validate_username_xpath"))).getText();
 			String email=key.get_text_xpath("validate_username_xpath");
 			if(email.equals(username)){
 				System.out.println("Login success and correct user is logged in");
@@ -104,18 +83,15 @@ public class myplex_signup_testcase {
 				System.out.println(" Valid Data Test Failed");
 				key.getscreenshot(datavalidation);
 			}
-			//driver.findElement(By.xpath(prop.getProperty("logout_xpath"))).click();
-		
+			
 			key.click_xpath("logout_xpath");
 			key.sleep(2000L);
-			//Thread.sleep(2000L);
 			
 		}else{
 			System.out.println("Valid Test Data Failed");
               key.getscreenshot(datavalidation);
 		}
 		}else if(datavalidation.equalsIgnoreCase("valid_data_exists_email")){
-			//String x=driver.findElement(By.cssSelector(prop.getProperty("invalid_signup_css"))).getText();
 			String x=key.get_text_css("invalid_signup_css");
 			System.out.println("Testing with already exisited email id");
 			System.out.println("user name is :"+username);
@@ -132,7 +108,6 @@ public class myplex_signup_testcase {
 			key.getscreenshot(datavalidation);
 		}
 			}else if(datavalidation.equalsIgnoreCase("valid_data_exists_cellnumber")){
-				//String n=driver.findElement(By.cssSelector(prop.getProperty("invalid_signup_css"))).getText();
 				String n=key.get_text_css("invalid_signup_css");
 				System.out.println("Testing with already existed number");
 				System.out.println("user name is :"+username);
@@ -148,8 +123,6 @@ public class myplex_signup_testcase {
 				key.getscreenshot(datavalidation);
 			}
 				}else if(datavalidation.equalsIgnoreCase("invalid_email")){
-			
-				//String y=driver.findElement(By.cssSelector(prop.getProperty("invalid_signup_css"))).getText();
 				String y=key.get_text_css("invalid_signup_css");
 				System.out.println("Testing Invalid email case");
 				System.out.println("user name is :"+username);

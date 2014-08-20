@@ -45,7 +45,7 @@ public class google_login_testcases {
 		{
 		//face book login Test
 				key.click_xpath("login_link_xpath");
-				key.click_xpath("login_link_xpath");
+				//key.click_xpath("login_link_xpath");
 				key.sleep(2000L);
 				key.click_css("google_sign_css");
 				key.sleep(2000L);
@@ -140,23 +140,23 @@ System.out.println("************************************");
 		Object[][] data=new Object[4][4];
 	//1st set of data
 		data[0][0]="valid_data";
-		data[0][1]="mademv@gmail.com";
+		data[0][1]="mademvv@gmail.com";
 		data[0][2]="janardhan.venkat";
 		data[0][3]="chrome";
    //2nd set of data
 		data[1][0]="invalid_email";
-		data[1][1]="mademvv@gmail.com";
+		data[1][1]="mademvvgmail.com";
 		data[1][2]="janardhan.venkat";
 		data[1][3]="chrome";
 	//3rd set of data
      	data[2][0]="invalid_password";
 		data[2][1]="mademvv@gmail.com";
-		data[2][2]="janardhan.venkat";
+		data[2][2]="janardhan";
 		data[2][3]="chrome";
 	//4th set of data
 		data[3][0]="both_invalid_email_password";
-		data[3][1]="mademvv@gmail.com";
-		data[3][2]="janardhan.venkat";
+		data[3][1]="mademvvgmail.com";
+		data[3][2]="janardhan";
 		data[3][3]="chrome";
 		return data;
 		

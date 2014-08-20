@@ -30,7 +30,7 @@ public class facebook_login_testcases {
 		{
 		//face book login Test
 			key.click_xpath("login_link_xpath");
-			key.click_xpath("login_link_xpath");
+			//key.click_xpath("login_link_xpath");
 		key.sleep(2000L);
 		key.click_css("facebook_sign_css");
 		key.sleep(2000L);

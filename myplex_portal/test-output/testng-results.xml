@@ -1,20 +1,39 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" total="1" passed="1">
+<testng-results skipped="0" failed="0" total="8" passed="8">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="69787" started-at="2014-08-17T11:27:21Z" finished-at="2014-08-17T11:28:31Z">
+  <suite name="Default suite" duration-ms="119082" started-at="2014-08-20T12:31:51Z" finished-at="2014-08-20T12:33:50Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="69787" started-at="2014-08-17T11:27:21Z" finished-at="2014-08-17T11:28:31Z">
-      <class name="com.test.trailers.trailers_test">
-        <test-method status="PASS" signature="share(java.lang.String, java.lang.String)[pri:0, instance:com.test.trailers.trailers_test@1fdd342]" name="share" duration-ms="69769" started-at="2014-08-17T16:57:21Z" data-provider="register_data" finished-at="2014-08-17T16:58:31Z">
+    <test name="Default test" duration-ms="119082" started-at="2014-08-20T12:31:51Z" finished-at="2014-08-20T12:33:50Z">
+      <class name="com.test.signup_flows.myplex_signup_testcase">
+        <test-method status="PASS" signature="beforetest()[pri:0, instance:com.test.signup_flows.myplex_signup_testcase@1d9d565]" name="beforetest" is-config="true" duration-ms="13" started-at="2014-08-20T18:01:51Z" finished-at="2014-08-20T18:01:51Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforetest -->
+        <test-method status="PASS" signature="facebook_login(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.test.signup_flows.myplex_signup_testcase@1d9d565]" name="facebook_login" duration-ms="25894" started-at="2014-08-20T18:01:51Z" data-provider="registerdata" finished-at="2014-08-20T18:02:16Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[facebook]]>
+                <![CDATA[valid_data_new_data]]>
               </value>
             </param>
             <param index="1">
+              <value>
+                <![CDATA[0.7233340122974937@gmail.com]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[janardhan123]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[9146450191]]>
+              </value>
+            </param>
+            <param index="4">
               <value>
                 <![CDATA[chrome]]>
               </value>
@@ -22,8 +41,219 @@
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- share -->
-      </class> <!-- com.test.trailers.trailers_test -->
+        </test-method> <!-- facebook_login -->
+        <test-method status="PASS" signature="facebook_login(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.test.signup_flows.myplex_signup_testcase@1d9d565]" name="facebook_login" duration-ms="26497" started-at="2014-08-20T18:02:16Z" data-provider="registerdata" finished-at="2014-08-20T18:02:43Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[valid_data_new_data]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[0.6604794873232287@gmail.com]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[janardhan123]]>
+              </value>
+            </param>
+            <param index="3">
+              <value is-null="true"/>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- facebook_login -->
+        <test-method status="PASS" signature="facebook_login(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.test.signup_flows.myplex_signup_testcase@1d9d565]" name="facebook_login" duration-ms="12007" started-at="2014-08-20T18:02:43Z" data-provider="registerdata" finished-at="2014-08-20T18:02:55Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[valid_data_exists_cellnumber]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[mademvv98783se534@gmail.com]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[janardhan123]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[8179653520]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- facebook_login -->
+        <test-method status="PASS" signature="facebook_login(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.test.signup_flows.myplex_signup_testcase@1d9d565]" name="facebook_login" duration-ms="11606" started-at="2014-08-20T18:02:55Z" data-provider="registerdata" finished-at="2014-08-20T18:03:07Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[valid_data_exists_email]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[mademvv@gmail.com]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[janardhan123]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[8170053000]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- facebook_login -->
+        <test-method status="PASS" signature="facebook_login(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.test.signup_flows.myplex_signup_testcase@1d9d565]" name="facebook_login" duration-ms="10110" started-at="2014-08-20T18:03:07Z" data-provider="registerdata" finished-at="2014-08-20T18:03:17Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[invalid_email]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[gytr]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[apalya]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[8100653520]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- facebook_login -->
+        <test-method status="PASS" signature="facebook_login(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.test.signup_flows.myplex_signup_testcase@1d9d565]" name="facebook_login" duration-ms="10519" started-at="2014-08-20T18:03:17Z" data-provider="registerdata" finished-at="2014-08-20T18:03:27Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[invalid_email]]>
+              </value>
+            </param>
+            <param index="1">
+              <value is-null="true"/>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[apalya]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[8100653520]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- facebook_login -->
+        <test-method status="PASS" signature="facebook_login(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.test.signup_flows.myplex_signup_testcase@1d9d565]" name="facebook_login" duration-ms="11501" started-at="2014-08-20T18:03:27Z" data-provider="registerdata" finished-at="2014-08-20T18:03:39Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[invalid_password]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[made@gmail.com]]>
+              </value>
+            </param>
+            <param index="2">
+              <value is-null="true"/>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[8100053520]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- facebook_login -->
+        <test-method status="PASS" signature="facebook_login(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.test.signup_flows.myplex_signup_testcase@1d9d565]" name="facebook_login" duration-ms="10890" started-at="2014-08-20T18:03:39Z" data-provider="registerdata" finished-at="2014-08-20T18:03:50Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[invalid_mobilenumber]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[made1@gmail.com]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[xyz897]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[81796535vhvhhhc]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- facebook_login -->
+      </class> <!-- com.test.signup_flows.myplex_signup_testcase -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

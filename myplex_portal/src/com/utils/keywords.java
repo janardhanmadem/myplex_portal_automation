@@ -37,7 +37,7 @@ public class keywords {
 	public static String result=null;
 	public keywords() throws Throwable{
 		prop=new Properties();
-		FileInputStream fp=new FileInputStream("G:\\workspace\\myplex_portal\\src\\com\\properties\\or.properties");
+		FileInputStream fp=new FileInputStream("C:\\users\\Janardhan\\git\\portal_automation\\myplex_portal\\src\\com\\properties\\or.properties");
 		prop.load(fp);
 		
 	}

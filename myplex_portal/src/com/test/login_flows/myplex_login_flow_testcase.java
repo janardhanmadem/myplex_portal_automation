@@ -38,14 +38,14 @@ public class myplex_login_flow_testcase {
 		
 		//login Test
 	    key.click_xpath("login_link_xpath");
-	    key.click_xpath("login_link_xpath");
+	    //key.click_xpath("login_link_xpath");
 	    key.send_text("username_xpath", username);
 	    key.send_text("password_xpath", password);
 	    key.click_xpath("submitbutton_xpath");
 		
 		if(datavalidation.equalsIgnoreCase("valid_data")){
 			System.out.println("Testing with Valid Data");
-		
+		key.sleep(2000L);
 		String profile=key.get_text_xpath("profile_xpath");
 		if(profile.equalsIgnoreCase("profile")){
 			System.out.println("Login is success");
@@ -123,22 +123,22 @@ public class myplex_login_flow_testcase {
 		//1st set of data
 		data[0][0]="valid_data";
 		data[0][1]="mademvv@gmail.com";
-		data[0][2]="apaly01";
+		data[0][2]="apalya01";
 		data[0][3]="chrome";
 		//2nd set of data
 		data[1][0]="invalid_email";
-		data[1][1]="mademvv@gmail.com";
+		data[1][1]="mademvvgmail.com";
 		data[1][2]="apalya01";
 		data[1][3]="chrome";
 		//3rd set of data
 		data[2][0]="invalid_password";
 		data[2][1]="mademvv@gmail.com";
-		data[2][2]="apalya01";
+		data[2][2]="apal";
 		data[2][3]="chrome";
 		//4th set of data
 		data[3][0]="both_invalid_email_password";
-		data[3][1]="mademvv@gmail.com";
-		data[3][2]="apalya01";
+		data[3][1]="mademgmail.com";
+		data[3][2]="apaly";
 		data[3][3]="chrome";
 		return data;
 		
