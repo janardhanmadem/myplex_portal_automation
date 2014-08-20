@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Myplex Login Suite]" allow-return-values="true">
+  <test name="Facebook login Test Case(failed)">
+    <classes>
+      <class name="com.test.login_flows.myplex_login_flow_testcase">
+        <methods>
+          <include name="beforetest"/>
+        </methods>
+      </class> <!-- com.test.login_flows.myplex_login_flow_testcase -->
+      <class name="com.test.login_flows.facebook_login_testcases">
+        <methods>
+          <include name="facebook_login" invocation-numbers="1 2 3"/>
+        </methods>
+      </class> <!-- com.test.login_flows.facebook_login_testcases -->
+      <class name="com.test.login_flows.google_login_testcases">
+        <methods>
+          <include name="beforetest"/>
+        </methods>
+      </class> <!-- com.test.login_flows.google_login_testcases -->
+      <class name="com.test.signup_flows.myplex_signup_testcase">
+        <methods>
+          <include name="beforetest"/>
+        </methods>
+      </class> <!-- com.test.signup_flows.myplex_signup_testcase -->
+    </classes>
+  </test> <!-- Facebook login Test Case(failed) -->
+  <test name="Google login Test Case(failed)">
+    <classes>
+      <class name="com.test.login_flows.myplex_login_flow_testcase">
+        <methods>
+          <include name="beforetest"/>
+        </methods>
+      </class> <!-- com.test.login_flows.myplex_login_flow_testcase -->
+      <class name="com.test.login_flows.google_login_testcases">
+        <methods>
+          <include name="facebook_login" invocation-numbers="0"/>
+          <include name="beforetest"/>
+        </methods>
+      </class> <!-- com.test.login_flows.google_login_testcases -->
+      <class name="com.test.signup_flows.myplex_signup_testcase">
+        <methods>
+          <include name="beforetest"/>
+        </methods>
+      </class> <!-- com.test.signup_flows.myplex_signup_testcase -->
+    </classes>
+  </test> <!-- Google login Test Case(failed) -->
+  <test name="myplex signup Test Case(failed)">
+    <classes>
+      <class name="com.test.login_flows.myplex_login_flow_testcase">
+        <methods>
+          <include name="beforetest"/>
+        </methods>
+      </class> <!-- com.test.login_flows.myplex_login_flow_testcase -->
+      <class name="com.test.login_flows.google_login_testcases">
+        <methods>
+          <include name="beforetest"/>
+        </methods>
+      </class> <!-- com.test.login_flows.google_login_testcases -->
+      <class name="com.test.signup_flows.myplex_signup_testcase">
+        <methods>
+          <include name="facebook_login" invocation-numbers="0 1 2 3 4 5 6 7"/>
+          <include name="beforetest"/>
+        </methods>
+      </class> <!-- com.test.signup_flows.myplex_signup_testcase -->
+    </classes>
+  </test> <!-- myplex signup Test Case(failed) -->
+</suite> <!-- Failed suite [Myplex Login Suite] -->
